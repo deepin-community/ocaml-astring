@@ -1,0 +1,8 @@
+@OCamlStdlibDir@/astring/opam
+@OCamlStdlibDir@/astring/*.mli
+@OCamlStdlibDir@/astring/*.cmi
+@OCamlStdlibDir@/astring/*.cmt*
+@OCamlStdlibDir@/astring/astring_top*
+OPT: @OCamlStdlibDir@/astring/*.cmx
+OPT: @OCamlStdlibDir@/astring/*.cmxa
+OPT: @OCamlStdlibDir@/astring/*.a

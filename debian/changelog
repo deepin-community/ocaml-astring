@@ -1,0 +1,25 @@
+ocaml-astring (0.8.5-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:48:05 +0800
+
+ocaml-astring (0.8.5-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Stéphane Glondu <glondu@debian.org>  Thu, 20 Aug 2020 08:24:24 +0200
+
+ocaml-astring (0.8.4-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump debhelper compat level to 13
+  * Bump Standard-Version to 4.5.0
+
+ -- Stéphane Glondu <glondu@debian.org>  Fri, 24 Jul 2020 10:12:15 +0200
+
+ocaml-astring (0.8.3-1) unstable; urgency=medium
+
+  * Initial release (Closes: #948776)
+
+ -- Stéphane Glondu <glondu@debian.org>  Mon, 13 Jan 2020 10:53:19 +0100

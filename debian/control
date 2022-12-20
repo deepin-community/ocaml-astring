@@ -1,0 +1,63 @@
+Source: ocaml-astring
+Section: ocaml
+Priority: optional
+Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Uploaders:
+ Stéphane Glondu <glondu@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ ocaml-nox,
+ ocaml-findlib,
+ ocamlbuild,
+ libtopkg-ocaml-dev,
+ opam-installer,
+ dh-ocaml
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: http://erratique.ch/software/astring
+Vcs-Git: https://salsa.debian.org/ocaml-team/ocaml-astring.git
+Vcs-Browser: https://salsa.debian.org/ocaml-team/ocaml-astring
+
+Package: libastring-ocaml-dev
+Architecture: any
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Provides: ${ocaml:Provides}
+Suggests: ocaml-findlib
+Description: alternative String module for OCaml (development)
+ Astring exposes an alternative String module for OCaml. This module
+ tries to balance minimality and expressiveness for basic, index-free,
+ string processing and provides types and functions for substrings,
+ string sets and string maps.
+ .
+ Remaining compatible with the OCaml String module is a non-goal. The
+ String module exposed by Astring has exception safe functions,
+ removes deprecated and rarely used functions, alters some signatures
+ and names, adds a few missing functions and fully exploits OCaml's
+ newfound string immutability.
+ .
+ This package contains development files.
+
+Package: libastring-ocaml
+Architecture: any
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Provides: ${ocaml:Provides}
+Suggests: ocaml-findlib
+Description: alternative String module for OCaml (runtime)
+ Astring exposes an alternative String module for OCaml. This module
+ tries to balance minimality and expressiveness for basic, index-free,
+ string processing and provides types and functions for substrings,
+ string sets and string maps.
+ .
+ Remaining compatible with the OCaml String module is a non-goal. The
+ String module exposed by Astring has exception safe functions,
+ removes deprecated and rarely used functions, alters some signatures
+ and names, adds a few missing functions and fully exploits OCaml's
+ newfound string immutability.
+ .
+ This package contains runtime files.

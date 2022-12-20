@@ -1,0 +1,3 @@
+@OCamlStdlibDir@/astring/META
+@OCamlStdlibDir@/astring/astring.cma
+OPT: @OCamlStdlibDir@/astring/astring.cmxs
